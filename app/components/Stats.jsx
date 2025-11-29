@@ -18,8 +18,8 @@ const cardVariant = {
 
 export function Stats() {
   return (
-    <section  className="px-[5%] bg-mint-lightest py-16 md:py-24 lg:py-28">
-      <div className="containe">
+    <section  className="px-[5%]  flex justify-center bg-mint-lightest py-16 md:py-24 lg:py-28">
+      <div className="xs:container md:max-w-6xl">
         <div className="mb-12 grid grid-cols-1 gap-y-5 md:mb-14 md:grid-cols-2 md:gap-x-12 lg:mb20 lg:gap-x-20">
           <div className="max-w-xl">
             <motion.p 

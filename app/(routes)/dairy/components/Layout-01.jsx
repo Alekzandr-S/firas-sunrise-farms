@@ -10,8 +10,8 @@ import Image from "next/image";
 
 export function Layout01() {
   return (
-    <section  className="bg-green text-white px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="sm:container -mt-8 md:-mt-16 lg:-mt-24">
+    <section  className="bg-green flex justify-center text-white px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="sm:container md:max-w-6xl -mt-8 md:-mt-16 lg:-mt-24">
         <div className="items-baseline grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
           <div>
             <motion.div 

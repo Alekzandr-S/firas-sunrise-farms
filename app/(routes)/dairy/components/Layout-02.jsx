@@ -16,8 +16,8 @@ import Image from "next/image";
 export function Layout02() {
   const router = useRouter();
   return (
-    <section  className="px-[5%] bg-orange-light  py-16 md:py-24 lg:py-28">
-      <div className="sm:container">
+    <section  className="px-[5%] bg-orange-light flex justify-center py-16 md:py-24 lg:py-28">
+      <div className="sm:container md:max-w-6xl">
         <div className="grid grid-cols-1 gap-y-12 md:grid-flow-row md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
           <div>
             <p className="mb-3 font-semibold md:mb-4">Sour</p>

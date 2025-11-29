@@ -57,10 +57,10 @@ export function Layout03() {
   const useScroll = useJaz();
   return (
     <section
-      className="px-[5%] bg-green text-white py-16 md:py-24 lg:py-28"
+      className="px-[5%] bg-green flex justify-center text-white py-16 md:py-24 lg:py-28"
       ref={useScroll.ref}
     >
-      <div className="container">
+      <div className="xs:container md:max-w-6xl">
         <div className="relative grid auto-cols-fr grid-cols-1 items-start gap-x-8 gap-y-12 md:grid-cols-[0.75fr_1fr] md:gap-y-16 lg:grid-cols-[max-content_1fr] lg:gap-x-20">
           <div className="static top-[20%] hidden h-56 overflow-hidden md:sticky md:flex md:items-start">
             <h1 className="text-[6rem] font-bold leading-[1] md:text-[14rem]">

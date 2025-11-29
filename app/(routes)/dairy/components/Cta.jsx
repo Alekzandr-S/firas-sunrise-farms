@@ -11,7 +11,7 @@ import { fadeIn } from "@/hooks/variants";
 export function Cta() {
   return (
     <section className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="containe">
+      <div className="containe ">
         <div className="grid auto-cols-fr grid-cols-1 lg:w-full gap-x-8 gap-y-12 md:grid-cols-2 lg:gap-x-16">
           <div className="flex flex-col max-w-7xl items-center justify-center text-center">
             <motion.div 

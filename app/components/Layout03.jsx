@@ -12,7 +12,7 @@ export function Layout03() {
   const router = useRouter();
   return (
     <section  className="px-[5%] flex flex-col justify-center items-center bg-green-lightest py-16 md:py-24 lg:py-28">
-      <div className="sm:container">
+      <div className="sm:container md:max-w-6xl">
         <div className="flex flex-col justify-center items-center">
           <div className="mb-12 md:mb-18 lg:mb-20">
             <div className="mx-auto flex max-w-4xl flex-col justify-center items-center text-center">
@@ -53,9 +53,9 @@ export function Layout03() {
                 exit="hidden"
               >
                 <MdCenterFocusStrong size={40} />
+                {/* <MdCenterFocusStrong size={40} />
                 <MdCenterFocusStrong size={40} />
-                <MdCenterFocusStrong size={40} />
-                <MdCenterFocusStrong size={40} />
+                <MdCenterFocusStrong size={40} /> */}
               </motion.div>
               <motion.div 
                 className="mt-6 flex flex-wrap items-center justify-center gap-4 md:mt-8"

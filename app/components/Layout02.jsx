@@ -37,7 +37,7 @@ export function Layout02() {
   const router = useRouter();
   return (
     <section  className="px-[5%] flex flex-col justify-center items-center bg-green-lighter py-16 md:py-24 lg:py-28">
-      <div className=" sm:container">
+      <div className=" sm:container md:max-w-6xl">
         <div className="flex justify-center flex-col items-center mx-auto mb-12 w-full max-wlg text-center md:mb-18 lg:mb-20">
           <motion.p 
             className="mb-3 font-semibold md:mb-4"
