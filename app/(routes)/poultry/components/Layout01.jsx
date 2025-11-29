@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@relume_io/relume-ui";
+import { Button } from "@/components/ui/button"; 
 import Image from "next/image";
 import React from "react";
 import { RxChevronRight } from "react-icons/rx";
@@ -9,8 +9,8 @@ import { fadeIn } from "@/hooks/variants";
 
 export function Layout01() {
   return (
-    <section  className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="sm:container">
+    <section  className="px-[5%] flex justify-center bg-mint py-16 md:py-24 lg:py-28">
+      <div className="sm:container md:max-w-6xl">
         <div className="rb-12 mb-12 md:mb-18 lg:mb-20">
           <div className="mx-auto max-w-lg text-center">
             <motion.p 
@@ -21,7 +21,7 @@ export function Layout01() {
               exit="hidden"
             >Sustainable</motion.p>
             <motion.h2 
-              className="rb-5 mb-5 leading-8  md:leading-12 lg:leading-16  
+              className="rb-5 mb-5 leading-8  md:leading-12 lg:leading-18  
                 text-[clamp(1.5rem,4vw,10rem)]  text5xl font-bold md:mb-6 
                 md:text7xl lg:text8xl
               "
@@ -52,7 +52,7 @@ export function Layout01() {
               exit="hidden"
             >
               <p className="mb-2 text-sm font-semibold">Organic</p>
-              <h3 className="mb-5 text 4xl font-semibold text-[clamp(1.5rem,3vw,10rem)] leading-[1.2] md:mb-6 md:text 5xl lg:text 6xl">
+              <h3 className="mb-5 text 4xl font-bold text-[clamp(1.5rem,3vw,10rem)] leading-[1.2] md:mb-6 md:text 5xl lg:text 6xl">
                 Layer and broiler chicken production
               </h3>
               <p>
@@ -67,23 +67,26 @@ export function Layout01() {
               whileInView="show"
               exit="hidden"
             >
-              <Button title="Learn more" variant="secondary">
+              <Button 
+                title="Learn more" 
+                variant="secondary"
+              >
                 Learn more
               </Button>
               <Button
                 title="Explore"
                 variant="link"
                 size="link"
-                iconRight={<RxChevronRight />}
+                // iconRight={}
               >
-                Explore
+                Explore <RxChevronRight />
               </Button>
             </motion.div>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="aspect-[] flex items-center justify-center">
             <Image
-              width={500}
-              height={500}
+              width={1500}
+              height={1500}
               src="/assets/images/chicken-production.png"
               className="size-full object-cover"
               alt="Jaz placeholder image"

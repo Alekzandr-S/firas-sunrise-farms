@@ -10,8 +10,8 @@ import { fadeIn } from "@/hooks/variants";
 
 export function Cta() {
   return (
-    <section  className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="sm:container">
+    <section  className="px-[5%] flex justify-center py-16 md:py-24 lg:py-28">
+      <div className="sm:container md:max-w-6xl">
         <div className="grid auto-cols-fr grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 lg:gap-x-16">
           <div className="flex flex-col items-center justify-center text-center">
             <motion.div
@@ -25,7 +25,7 @@ export function Cta() {
             </motion.div>
             <motion.h2 
               className="rb-5 mb-5 leading-8 md:leading-12 lg:leading-16 
-              text-[clamp(2rem,5vw,16rem)] 
+              text-[clamp(1.3rem,4vw,10rem)] 
               text5xl font-bold md:mb-6 md:text7xl lg:text8xl"
               variants={fadeIn('up', 0.2)}
               initial="hidden"
@@ -50,7 +50,7 @@ export function Cta() {
               whileInView="show"
               exit="hidden"
             >
-              <Button onClick={() => router.push("/contact")} variant="primary">Order now</Button>
+              <Button className="text-white bg" onClick={() => router.push("/contact")} variant="outline">Order now</Button>
               <Button onClick={() => router.push("/contact")} variant="secondary">Contact us</Button>
             </motion.div>
           </div>
@@ -65,7 +65,7 @@ export function Cta() {
               <CiCircleMore size={40} color="orange" />
             </motion.div>
             <motion.h2 
-              className="rb-5 mb-5 leading-8 md:leading-12 lg:leading-16 text-[clamp(2rem,5vw,16rem)] text5xl font-bold md:mb-6 md:text7xl lg:text8xl"
+              className="rb-5 mb-5 leading-8 md:leading-12 lg:leading-20 text-[clamp(1.3rem,4vw,10rem)] text5xl font-bold md:mb-6 md:text7xl lg:text8xl"
               variants={fadeIn('up', 0.2)}
               initial="hidden"
               whileInView="show"
@@ -89,7 +89,7 @@ export function Cta() {
               whileInView="show"
               exit="hidden"
             >
-              <Button asChild variant="primary">
+              <Button asChild variant="outline" className="text-white">
                 <Link
                   href={"tel:0950004590"}
                 >Call us</Link></Button>

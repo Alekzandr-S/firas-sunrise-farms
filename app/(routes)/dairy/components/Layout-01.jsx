@@ -11,8 +11,8 @@ import Image from "next/image";
 export function Layout01() {
   return (
     <section  className="bg-green text-white px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="sm:container">
-        <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
+      <div className="sm:container -mt-8 md:-mt-16 lg:-mt-24">
+        <div className="items-baseline grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
           <div>
             <motion.div 
               className="rb-5 mb-5 md:mb-6"
@@ -24,7 +24,7 @@ export function Layout01() {
               <FaBottleDroplet size={40} color="orange" />
             </motion.div>
             <motion.h2 
-              className="rb-5 mb-5 text5xl leading-10 sm:leading-16 text-[clamp(1.5rem,4vw,10rem)] font-bold md:mb-6 md:text7xl lg:text8xl"
+              className="rb-5 mb-5 text5xl leading-10 md:leading-12 lg:leading-20 text-[clamp(1.5rem,4vw,10rem)] font-bold md:mb-6 md:text7xl lg:text8xl"
               variants={fadeIn('center', 0.2)}
               initial="hidden"
               whileInView="show"

@@ -9,10 +9,10 @@ const Layout011 = () => {
   return (
     <>
       <section className="dairy-features revea" id="dairy-services">
-        <div className='containe'>
+        <div className='containe mx-auto max-w-2xl'>
           <div className="pf-wra revea-stagger">
             <motion.div
-              className="pf-intro"
+              className="pf-intro mb-4 gap-4"
               variants={fadeIn('center', 0.2)}
               initial="hidden"
               whileInView="show"
@@ -23,7 +23,7 @@ const Layout011 = () => {
               <p>
                 Our cows are pasture fed, well cared for, and milked daily to ensure freshness and nutritional value.
               </p>
-              <a href="products.html" className="btn btn-outline">Our Ranch</a>
+              <a href="/contact" className="font-bold rounded-[999px] mb-4 py-4 px-6 bg-orange">Our Ranch</a>
             </motion.div>
             <ul className="pf-grid">
               <motion.li

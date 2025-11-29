@@ -25,7 +25,7 @@ export function Layout03() {
               exit="hidden"
             >Quality</motion.p>
             <motion.h2
-              className="mb-5 leading-8 md:leading-12 lg:leading-16 text-[clamp(2rem,5vw,16rem)] text5xl font-bold md:mb-6 md:text7xl lg:text8xl"
+              className="mb-5 leading-8 md:leading-12 lg:leading-24 text-[clamp(2rem,5vw,16rem)] text5xl font-bold md:mb-6 md:text7xl lg:text8xl"
               variants={fadeIn('up', 0.2)}
               initial="hidden"
               whileInView="show"

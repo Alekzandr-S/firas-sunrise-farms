@@ -9,8 +9,8 @@ import Image from "next/image";
 
 export function Layout02() {
   return (
-    <section id="jazSystems" className="px-[5%] flex justify-center py-16 md:py-24 lg:py-28">
-      <div className="sm:container">
+    <section id="jazSystems" className="px-[5%] bg-mint-dark flex justify-center py-16 md:py-24 lg:py-28">
+      <div className="sm:container md:max-w-6xl">
         <div className="rb-12 mb-12 md:mb-18 lg:mb-20">
           <div className="mx-auto max-w-lg text-center">
             <motion.p 
@@ -44,7 +44,7 @@ export function Layout02() {
           </div>
         </div>
         <div className="grid grid-cols-1 items-start gap-6 md:grid-cols-2 md:gap-8">
-          <div className="border border-border-primary">
+          <div className="border border-border-primary flexflexcol" >
             <motion.div 
               className="flex aspect-[2/1] overflow-hidden max-w[150px] w[80px] h-auto mx-auto items-center justify-center"
               variants={fadeIn('up', 0.23)}
@@ -54,8 +54,8 @@ export function Layout02() {
             >
               <Image
                 width={1800}
-                height={500}
-                src="/assets/images/egg-benefits.jpg"
+                height={1800}
+                src="/assets/images/egg-production2.jpg"
                 className="size-full object-cover hauto"
                 alt="Jaz placeholder image 1"
                 layout="responsive"
@@ -63,20 +63,20 @@ export function Layout02() {
             </motion.div>
             <div className="p-6 md:p-8 lg:p-12">
               <motion.p 
-                className="mb-2 text-sm font-semibold"
+                className="mb-2 text-sm  font-semibold"
                 variants={fadeIn('up', 0.2)}
                 initial="hidden"
                 whileInView="show"
                 exit="hidden"
               >Healthy</motion.p>
               <motion.h3 
-                className="mb-5 text4xl font-semibold text-[clamp(1.5rem,3vw,10rem)] leading-[1.2] md:mb-6 md:text5xl lg:text6xl"
+                className="mb-5 text4xl font-semibold text-[clamp(1.5rem,3vw,10rem)] leading-[1.0] md:mb-6 md:text5xl lg:text6xl"
                 variants={fadeIn('up', 0.2)}
                 initial="hidden"
                 whileInView="show"
                 exit="hidden"
               >
-                Nutritional advantages of our eggs
+                Nutrition of our eggs
               </motion.h3>
               <motion.p
                 variants={fadeIn('up', 0.25)}
@@ -135,7 +135,7 @@ export function Layout02() {
               >Protein</motion.p>
 
               <motion.h3 
-                className="mb-5 text4xl font-semibold text-[clamp(1.5rem,3vw,10rem)]  leading-[1.2] md:mb-6 md:text5xl lg:text6xl"
+                className="mb-5 text4xl font-semibold text-[clamp(1.5rem,3vw,10rem)]  leading-[1.0] md:mb-6 md:text5xl lg:text6xl"
                 variants={fadeIn('up', 0.2)}
                 initial="hidden"
                 whileInView="show"
