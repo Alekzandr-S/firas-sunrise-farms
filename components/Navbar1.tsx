@@ -72,10 +72,10 @@ export function Navbar1() {
         }`}
     >
       <div className="size-ful relative w-full md:px-4 text-mint-lightest lg:flex lg:items-center lg:justify-between">
-        <div className="flex min-h16 w-full items-center justify-between pr[5%] md:px-[5%] md:min-h18 lg:min-h-full ">
+        <div className="flex min-h16 relative -ml-2 sm:ml-0 w-full items-center justify-between pr[5%] md:px-[5%] md:min-h18 lg:min-h-full ">
           <Link
             href="/"
-            className={`bg-mint-dark h-20 mt1.5 rounded block relative top-10 -ml8 py-3 md:ml0 md:top12 
+            className={`bg-mint-dark h-20 rounded block relative top-10 py-3 md:ml0
                 } `}
           >
             <Image
@@ -83,7 +83,7 @@ export function Navbar1() {
               alt="logo"
               width={40}
               height={20}
-              className="w-full dark:idden"
+              className="w-full max-w8 sm:max-w-ful -ml2 dark:idden"
             />
           </Link>
           <button

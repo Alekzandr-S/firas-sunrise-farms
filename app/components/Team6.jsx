@@ -72,7 +72,7 @@ const profiles = [
 export function Team6() {
   const router = useRouter();
   return (
-    <section  className="px-[5%] flex justify-center bg-orange-lightest py-16 md:py-24 lg:py-28">
+    <section  className="px-[5%] flex justify-center   bg-orange-lightest py-16 md:py-24 lg:py-28">
       <div className="sm:container md:max-w-6xl" >
         <div className="mx-auto mb-12 max-w-lg text-center md:mb-18 lg:mb-20">
           <motion.p 
@@ -81,6 +81,7 @@ export function Team6() {
             initial="hidden"
             whileInView="show"
             exit="hidden"
+            
           >People</motion.p>
           <motion.h2 
             className="rb-5 mb-5 leading-16 text-[clamp(1.5rem,4vw,10rem)] text5xl font-bold md:mb-6 md:text7xl lg:text8xl"
